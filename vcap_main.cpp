@@ -99,12 +99,12 @@ int main(int argc, char **argv)
 		}
 		else if (key == 'b')
 		{
-			cout << "Set background color" << endl;
+			cout << "Set background color : "<< rgb << endl;
 			config.setBGcolor(rgb);
 		}
 		else if (key == 'c')
 		{
-			cout << "Set charactor color" << endl;
+			cout << "Set charactor color : "<< rgb << endl;
 			config.setCHARcolor(rgb);
 		}
 		else if (key == 's')
