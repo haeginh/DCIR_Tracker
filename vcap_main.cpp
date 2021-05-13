@@ -221,55 +221,5 @@ int main(int argc, char **argv)
 		}
 	}
 
-	// 	proc.DebugWindow();
-	// 	proc.DebugPower();
-	// 	proc.DebugDigits();
-	// 	proc.DebugOCR();
-	// 	KNearestOcr ocr(config);
-	// 	if (!ocr.loadTrainingData()) { cout << "      Failed to load OCR training data" << endl; return 1; }
-	// 	cout << "      OCR training data loaded." << endl;
-
-	// 	bool pushcrop = false;
-
-	// 	int roi_cols(0), roi_rows(0);
-	// 	// Set ROI
-	// 	cv::destroyAllWindows();
-	// 	roi->setROIBox(blackBox);
-
-	// 	ofstream ofs("ocrtest.txt");
-
-	// 	cv::Mat imgNone = cv::Mat::zeros(img.rows,img.cols,CV_8UC3);
-	// 	int frameNo(0);
-	// 	while(1) {
-	// 		Timer ocr_timer;
-	// 		ocr_timer.start();
-	// 		cap >> img;
-	// 		cv::Mat imgCopy(imgNone);
-	// //		cv::resize(img, img2, cv::Size(floor(img.cols/resize_factor), floor(img.rows/resize_factor)));
-	// 		// Read ROI box screen
-	// 		for (int k=0; k<blackBox.size(); k++) {
-	// 			for (int i=blackBox[k].x; i< blackBox[k].x + blackBox[k].width; i++) {
-	// 				for (int j=blackBox[k].y; j<blackBox[k].y + blackBox[k].height; j++) {
-	// 					imgCopy.at<cv::Vec3b>(j,i) = img.at<cv::Vec3b>(j,i);
-	// 				}
-	// 			}
-	// 		}
-	// 		proc.SetInput(imgCopy);
-	// 		proc.Process(roi);
-	// 		bool powerOn = proc.GetPowerOn();
-	// 		string voltage  = ocr.recognize(proc.GetOutputkV());
-	// 		string current  = ocr.recognize(proc.GetOutputmA());
-	// 		string dapRate  = ocr.recognize(proc.GetOutputDAP());
-	// 		string fluoTime = ocr.recognize(proc.GetOutputTime());
-	// 		ocr_timer.stop();
-	// 		cout << "Frame #                    : " << frameNo++ << endl;
-	// 		cout << "Tube Voltage   (kVp)       : " << voltage << endl;
-	// 		cout << "Tube Current   (mA)        : " << current << endl;
-	// 		cout << "DAP rate       (Gy-cm2/s)  : " << dapRate << endl;
-	// 		cout << "Fluo Signal    (1:ON/0:OFF): " << powerOn << endl;
-	// //		cout << "Fluo Time      (mm:ss)     : " << fluoTime.substr(0,2) << ":" << fluoTime.substr(2,4) << endl;
-	// 		cout << "Frame Time     (s)         : " << ocr_timer.time() << endl << endl;
-	// 	}
-
 	return 0;
 }
